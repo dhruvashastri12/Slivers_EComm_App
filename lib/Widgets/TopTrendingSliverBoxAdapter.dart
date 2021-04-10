@@ -18,7 +18,7 @@ class TopTrendingSliverBoxAdapter extends StatelessWidget {
           Text('Top Trending',
               style: TextStyle(color: Colors.black, fontSize: 22.0)),
           Container(
-            height: 170.0,
+            height: 250.0,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: objFSRList.length,
@@ -31,7 +31,7 @@ class TopTrendingSliverBoxAdapter extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(5.0),
                       child: Container(
-                        width: 100, // manages card width
+                        width: 120, // manages card width
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -45,18 +45,18 @@ class TopTrendingSliverBoxAdapter extends StatelessWidget {
                                   ),
                                 )),
                             Padding(
-                              padding: const EdgeInsets.fromLTRB(5, 5, 0, 2),
-                              child: Text("Item Name",
+                              padding: const EdgeInsets.only(top:5, bottom:5),
+                              child: Text(objFSRList[index].title, maxLines: 4, overflow: TextOverflow.ellipsis, textAlign: TextAlign.center,
                                   style: TextStyle(
                                       color: Colors.black,
                                       fontSize: 16.0,
                                       fontWeight: FontWeight.w500)),
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(left: 8),
-                              child: Text("Price",
+                              padding: const EdgeInsets.only(top: 8),
+                              child: Text(objFSRList[index].price, textAlign: TextAlign.center,
                                   style: TextStyle(
-                                      color: Colors.black45, fontSize: 14.0)),
+                                      color: Colors.black45, fontSize: 16.0, fontWeight: FontWeight.w600)),
                             ),
                           ],
                         ),
