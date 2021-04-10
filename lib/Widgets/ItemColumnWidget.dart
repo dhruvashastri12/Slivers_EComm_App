@@ -30,16 +30,16 @@ class ItemColumnWidget extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.all(4),
-                child: Text("Item Name",
+                child: Text(objFakeStoreResPojo.title, maxLines: 1, overflow: TextOverflow.ellipsis, textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.black,
-                        fontSize: 12.0,
+                        fontSize: 16.0,
                         fontWeight: FontWeight.w500)),
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 8),
-                child: Text("Price",
-                    style: TextStyle(color: Colors.black45, fontSize: 10.0)),
+                child: Text(objFakeStoreResPojo.price,
+                    style: TextStyle(color: Colors.black45, fontSize: 14.0)),
               ),
             ],
           ),

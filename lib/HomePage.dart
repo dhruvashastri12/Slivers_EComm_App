@@ -94,7 +94,7 @@ class _HomePageState extends State<HomePage> {
                     (BuildContext context, int index) {
                       return ItemColumnWidget(
                         objFakeStoreResPojo: objFSRList[index],
-                        itemImageHeight: 120,
+                        itemImageHeight: 100,
                       );
                     },
 
@@ -135,10 +135,9 @@ class _HomePageState extends State<HomePage> {
                     (BuildContext context, int index) {
                       return ItemColumnWidget(
                         objFakeStoreResPojo: objFSRList[index],
-                        itemImageHeight: 60,
+                        itemImageHeight: 50,
                       );
                     },
-
                     /// or set childCount to limit no.of items
                     childCount: 10,
                   ),

@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:slivers_ecomm_demo/Networkcall/fakeStoreResponsePojo.dart';
 
+// ignore: must_be_immutable
 class PageViewHeader extends StatefulWidget {
 
   List<FakeStoreResponsePojo> objFSRList;

@@ -26,19 +26,26 @@ class ItemRowWidget extends StatelessWidget {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 20.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text("Item Name",
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 18.0,
-                          fontWeight: FontWeight.w500)),
-                  Text("Price",
-                      style: TextStyle(color: Colors.black, fontSize: 16.0)),
-                ],
+            Flexible(
+              child: Padding(
+                padding: const EdgeInsets.only(left: 20.0, right: 10.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(objFakeStoreResPojo.title,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.w500)),
+                    Text(objFakeStoreResPojo.price,
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.w500)),
+                  ],
+                ),
               ),
             )
           ],
