@@ -138,7 +138,6 @@ class _HomePageState extends State<HomePage> {
                         itemImageHeight: 60,
                       );
                     },
-
                     /// or set childCount to limit no.of items
                     childCount: 10,
                   ),
