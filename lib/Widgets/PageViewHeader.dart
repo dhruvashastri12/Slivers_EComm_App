@@ -1,11 +1,10 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:slivers_ecomm_demo/fakeStoreResponsePojo.dart';
+import 'package:slivers_ecomm_demo/Networkcall/fakeStoreResponsePojo.dart';
 
 class PageViewHeader extends StatefulWidget {
 
-  // final FakeStoreResponsePojo objFakeStoreResPojo;
   List<FakeStoreResponsePojo> objFSRList;
   PageViewHeader({@required this.objFSRList});
 
@@ -40,7 +39,6 @@ class _PageViewHeaderState extends State<PageViewHeader> {
 
   @override
   Widget build(BuildContext context) {
-    // print('pageview: ${widget.objFakeStoreResPojo.id}');
     if(widget.objFSRList == null) widget.objFSRList = <FakeStoreResponsePojo>[];
     return PageView(
       controller: _pageController,
@@ -49,8 +47,6 @@ class _PageViewHeaderState extends State<PageViewHeader> {
           decoration: BoxDecoration(
             image: DecorationImage(
               image: NetworkImage(widget.objFSRList[5].image),
-              // image: NetworkImage(
-              //     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcbhSTF1MyRkVM85i_uWJdsC1yuTfEjsh1Lw&usqp=CAU'),
               fit: BoxFit.cover,
             ),
           ),

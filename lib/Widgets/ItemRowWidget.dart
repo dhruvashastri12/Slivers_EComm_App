@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:slivers_ecomm_demo/fakeStoreResponsePojo.dart';
+import 'package:slivers_ecomm_demo/Networkcall/fakeStoreResponsePojo.dart';
 
 class ItemRowWidget extends StatelessWidget {
   final FakeStoreResponsePojo objFakeStoreResPojo;
@@ -12,7 +12,6 @@ class ItemRowWidget extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.only(right: 10.0),
         child: Row(
-          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Padding(
               padding: const EdgeInsets.all(4.0),
@@ -22,8 +21,6 @@ class ItemRowWidget extends StatelessWidget {
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     image: NetworkImage(objFakeStoreResPojo.image),
-                    // image: NetworkImage(
-                    //     'https://www.vhv.rs/dpng/d/547-5478988_orange-color-on-headphones-in-ear-headphones-png.png'),
                     fit: BoxFit.fill,
                   ),
                 ),

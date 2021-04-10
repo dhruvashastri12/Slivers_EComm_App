@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:slivers_ecomm_demo/fakeStoreResponsePojo.dart';
+import 'package:slivers_ecomm_demo/Networkcall/fakeStoreResponsePojo.dart';
 
+// ignore: must_be_immutable
 class TopTrendingSliverBoxAdapter extends StatelessWidget {
-  // final FakeStoreResponsePojo objFakeStoreResPojo;
+
   List<FakeStoreResponsePojo> objFSRList;
+  
   TopTrendingSliverBoxAdapter({@required this.objFSRList});
 
   @override
   Widget build(BuildContext context) {
     if(objFSRList == null) objFSRList = <FakeStoreResponsePojo>[];
     return Container(
-      color: Colors.grey,
+      color: Colors.deepOrange[100],
       child: Column(
         children: [
           Text('Top Trending',
@@ -39,8 +41,6 @@ class TopTrendingSliverBoxAdapter extends StatelessWidget {
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
                                     image: NetworkImage(objFSRList[index].image),
-                                    // image: NetworkImage(
-                                    //     'https://freepngimg.com/thumb/headphones/5-blue-headphones-png-image.png'),
                                     fit: BoxFit.fill,
                                   ),
                                 )),
