@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:slivers_ecomm_demo/fakeStoreResponsePojo.dart';
+import 'package:slivers_ecomm_demo/Networkcall/fakeStoreResponsePojo.dart';
 
 class ItemColumnWidget extends StatelessWidget {
-  // final double cardWidth;
   final double itemImageHeight;
   final FakeStoreResponsePojo objFakeStoreResPojo;
 
@@ -16,10 +15,7 @@ class ItemColumnWidget extends StatelessWidget {
         color: Colors.white,
         elevation: 1,
         child: Container(
-          // width: cardWidth, // manages card width
           child: Column(
-            // mainAxisSize: MainAxisSize.min,
-            // crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Padding(
                 padding: const EdgeInsets.only(top: 5.0),
@@ -28,8 +24,6 @@ class ItemColumnWidget extends StatelessWidget {
                     decoration: BoxDecoration(
                       image: DecorationImage(
                         image: NetworkImage(objFakeStoreResPojo.image),
-                        // image: NetworkImage(
-                        //     'https://www.vhv.rs/dpng/d/450-4502807_iphone-12-pro-max-price-hd-png-download.png'),
                         fit: BoxFit.cover,
                       ),
                     )),

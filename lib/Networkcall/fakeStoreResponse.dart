@@ -1,4 +1,4 @@
-import 'package:slivers_ecomm_demo/fakeStoreResponsePojo.dart';
+import 'package:slivers_ecomm_demo/Networkcall/fakeStoreResponsePojo.dart';
 
 
 class FakeStoreResponse {
@@ -12,7 +12,6 @@ class FakeStoreResponse {
 
     json.forEach((element) {
       // if(fakeStoreList == null) fakeStoreList = <FakeStoreResponsePojo>[];
-      print('element $element');
       fakeStoreList.add(FakeStoreResponsePojo.fromJson(element));
     });
     }
